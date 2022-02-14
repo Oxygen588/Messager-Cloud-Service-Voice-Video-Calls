@@ -1,0 +1,12 @@
+<script>
+let ws = new WebSocket('ws://192.168.1.80:9898/');
+
+setTimeout(function(){
+    let obj = {};
+    obj.name="gigel";
+    obj.room="55";
+    ws.send(JSON.stringify(obj));
+  }, 300);
+</script>
+
+
